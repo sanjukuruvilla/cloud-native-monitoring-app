@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile  # Assuming your Dockerfile is in the same directory as docker-compose.yml
-    image: monitor:latest  # Tagging the image as "Monitor"
+    image: leescoresby/monitor:latest  # Tagging the image as "Monitor"
     ports:
       - "5000:5000"
 
