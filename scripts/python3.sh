@@ -9,9 +9,11 @@ install_python3() {
 
         # Install Python3
         sudo apt install -y python3
+	sudo apt install -y python3-pip
     elif command -v yum &>/dev/null; then
         # Install Python3
         sudo yum install -y python3
+	sudo yum install -y python3-pip
     else
         echo "Unsupported operating system. Please install Python3 manually."
         exit 1
